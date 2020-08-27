@@ -22,7 +22,8 @@
 
     if(param1 >=0 && param2 >= 0)
     {
-        NSString* total = @(param1 + param2);
+        NSNumber *sum = @([param1 integerValue] + [param2 integerValue]);
+        NSString *total = [NSString stringWithFormat:@"%@", sum];
         pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:total];
     }else
     {
@@ -41,7 +42,8 @@
 
     if(param1 >=0 && param2 >= 0)
     {
-        NSString* total = @(param1 - param2);
+        NSNumber *sum = @([param1 integerValue] - [param2 integerValue]);
+        NSString *total = [NSString stringWithFormat:@"%@", sum];
         pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:total];
     }else
     {
