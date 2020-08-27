@@ -2,7 +2,7 @@
 
 #import <Cordova/CDV.h>
 
-@interface MathCalculator : CDVPlugin {
+@interface Calculadora : CDVPlugin {
   // Member variables go here.
 }
 
@@ -12,7 +12,7 @@
 
 @end
 
-@implementation MathCalculator
+@implementation Calculadora
 
 - (void)add:(CDVInvokedUrlCommand*)command
 {
